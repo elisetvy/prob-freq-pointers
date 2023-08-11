@@ -23,7 +23,7 @@ function averagePair(nums, targetAvg) {
 
   let left = 0;
   let right = nums.length - 1;
-
+//FIXME: average should be const
   while (left < right) {
     let average = (nums[left] + nums[right]) / 2;
     if (average === targetAvg) {

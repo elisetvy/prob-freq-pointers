@@ -16,10 +16,10 @@ function canConstructWord (word, letters) {
   if (letters.length < word.length) {
     return false;
   }
-
+//FIXME: should be const
   let letterObject = makeFreqCount(letters);
   let wordObject = makeFreqCount(word);
-
+//TODO: check different options for ||
   for (let key in wordObject) {
     if (wordObject[key] > letterObject[key] || !letterObject[key]) {
       return false;
